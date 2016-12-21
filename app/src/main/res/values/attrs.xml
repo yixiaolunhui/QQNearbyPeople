@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadarView">
+        <attr name="mRingColor" format="color"/>
+        <attr name="mScanBgColor" format="color"/>
+        <attr name="mRingWidth" format="dimension"/>
+        <attr name="mRingNum" format="integer"/>
+        <attr name="mScanSpeed" format="integer"/>
+        <attr name="mScanAngle" format="integer"/>
+    </declare-styleable>
+</resources>

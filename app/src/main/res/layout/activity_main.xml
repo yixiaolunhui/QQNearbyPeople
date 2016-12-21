@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lkd"
+    tools:context="com.dalong.qqnearbypeople.MainActivity">
+
+    <com.dalong.qqnearbypeople.view.RadarViewLayout
+        android:id="@+id/radarViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dalong.qqnearbypeople.view.RadarView
+            android:id="@+id/radarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:mRingColor="#3C8EAE"
+            app:mRingNum="6"
+            app:mRingWidth="0.3px"
+            app:mScanAngle="2"
+            app:mScanSpeed="25"
+            app:mScanBgColor="#3384B5CA"
+            />
+    </com.dalong.qqnearbypeople.view.RadarViewLayout>
+
+
+    <com.dalong.qqnearbypeople.view.GalleryRecyclerView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="180dp"
+        android:layout_marginBottom="20dp"
+        android:clipChildren="false"/>
+
+</RelativeLayout>
